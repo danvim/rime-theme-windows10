@@ -1,0 +1,44 @@
+# Rime theme
+
+color_scheme_windows10:
+  name: "Windows 10"
+  candidate_text_color: 0x000000
+  comment_text_color: 0x888888
+  text_color: 0x000000
+  back_color: 0xffffff
+  border_color: 0xcc8f29
+  hilited_text_color: 0x000000
+  hilited_back_color: 0xffffff
+  hilited_candidate_text_color: 0xffffff
+  hilited_candidate_back_color: 0xcc8f29
+  hilited_comment_text_color: 0xffffff
+  hilited_label_color: 0xffffff
+  label_color: 0x888888
+
+style_override_weasel:
+  color_scheme: windows10
+  label_format: "%s"
+  font_point: 14
+  inline_preedit: true
+  layout:
+    min_width: 160
+    min_height: 0
+    border_width: 1
+    margin_x: 12
+    margin_y: 12
+    spacing: 10
+    candidate_spacing: 24
+    hilite_spacing: 8
+    hilite_padding: 12
+    round_corner: 0
+
+style_override_squirrel:
+  color_scheme: windows10
+  inline_preedit: true
+  corner_radius: 0
+  border_width: 12
+  border_height: 12
+  line_spacing: 21
+  spacing: 21
+  candidate_format: '%c %@'
+  font_point: 21

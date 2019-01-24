@@ -1,0 +1,19 @@
+# encoding: utf-8
+---
+recipe:
+  Rx: customize
+  args:
+    - frontend
+  description: >-
+    Customize weasel/squirrel to use Windows 10 theme.
+
+install_files: >-
+  # windows10_theme.yaml
+
+patch_files:
+  ${frontend:-_}.custom.yaml:
+    - patch/+:
+        preset_color_schemes/windows10:
+          __include: windows10_theme:/color_scheme_windows10
+        style/+:
+          __include: windows10_theme:/style_override_${frontend}
